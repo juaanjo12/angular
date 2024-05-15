@@ -1,0 +1,21 @@
+<h2>Lista peliculas</h2>
+<div class="container">
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Edad</th>
+            <th>Duración</th>
+        </tr>
+    </thead>
+    <tbody class="table">
+        <tr *ngFor="let pelicula of peliculas">
+            <td>{{pelicula.nombre}}</td>
+            <td>{{pelicula.tipo}}</td>
+            <td>{{pelicula.edad}}</td>
+            <td>{{pelicula.duracion}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
