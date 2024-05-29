@@ -15,6 +15,10 @@
             <td>{{pelicula.tipo}}</td>
             <td>{{pelicula.edad}}</td>
             <td>{{pelicula.duracion}}</td>
+            <td>
+                <button (click)="actualizarPelicula(pelicula.id)" class="btn btn-info">Editar</button>
+                <button (click)="eliminarPelicula(pelicula.id)" class="btn btn-info" style="margin-left: 10px;">Borrar</button>
+            </td>
         </tr>
     </tbody>
 </table>
